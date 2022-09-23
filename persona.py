@@ -1,21 +1,22 @@
-class persona():
-    def init(self, numero, nombre, direccion):
-        self.nombre = nombre
-        self.numero= numero
-        self.direccion = direccion
+class persona:
+     def __init__(self,nombre,numero,direccion):
+         self.__nombre=nombre
+         self.__numero=numero
+         self.__direccion=direccion
 
         #CREACION DE GETTERS
-        def verNombre(self):
-            return self.nombre
-        def verNumero(self):
-            return self.numero 
-        def verDireccion(self):
-            return self.direccion
+     def verNombre(self):
+         return self.__nombre
+
+     def verNumero(self):
+         return self.__numero
+     def verDireccion(self):
+         return self.__direccion
 
         #CREACION DE SETTERS
-        def modificarNombre(self, nuevoNombre):
-            self.numero = nuevoNombre
-        def modificarNumero(self, nuevoNumero):
-            self.numero = nuevoNumero  
-        def modificarDireccion(self, nuevaDireccion):
-           self.numero = nuevaDireccion                                        
+     def modificarNombre(self, nuevoNombre):
+         self.__nombre = nuevoNombre
+     def modificarNumero(self, nuevoNumero):
+         self.__numero = nuevoNumero  
+     def modificarDireccion(self, nuevaDireccion):
+         self.__direccion = nuevaDireccion                                        
